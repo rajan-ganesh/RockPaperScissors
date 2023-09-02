@@ -6,8 +6,10 @@
 
 ~~ - Colors and Formatting~~
 
-- Count of Total Wins and Losses
+~~- Count of Total Wins and Losses~~
 
 - ~~Emojis for Symbols~~
 
 - Implement ES6 Modules and extract consts
+
+- Save State on page reloads, to maintain number of wins and losses

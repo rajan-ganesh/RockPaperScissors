@@ -26,6 +26,15 @@ button {
 button:hover {
     background-color: #0056b3; 
 }
+#scoreboard {
+    margin: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+#scoreboard h2{
+    color: #86366e;
+}
+
 
   
   

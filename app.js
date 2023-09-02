@@ -2,6 +2,16 @@ const COMPUTER_WIN_MESSAGE = "Computer Wins!";
 const USER_WIN_MESSAGE = "You Win!";
 const TIE_MESSAGE = "Tie";
 
+const winsDisplay = document.getElementById("wins");
+const lossesDisplay = document.getElementById("losses");
+const tieDisplay = document.getElementById("ties");
+let winCount = 0;
+let lossCount = 0;
+let tieCount = 0;
+winsDisplay.innerHTML = winCount;
+lossesDisplay.innerHTML = lossCount;
+tieDisplay.innerHTML = tieCount;
+
 //consts used in button Id
 const ROCK = "Rock";
 const PAPER = "Paper";
@@ -81,6 +91,17 @@ function calculateResult() {
     } else {
       result = USER_WIN_MESSAGE;
     }
+  }
+
+  if(result == COMPUTER_WIN_MESSAGE){
+    lossCount++;
+    lossesDisplay.innerHTML = lossCount;
+  } else if (result == USER_WIN_MESSAGE){
+    winCount++;
+    winsDisplay.innerHTML = winCount;
+  } else {
+    tieCount++;
+    tieDisplay.innerHTML = tieCount;
   }
   
   resultDisplay.innerHTML = result;
