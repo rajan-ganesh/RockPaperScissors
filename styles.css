@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+#texts {
+    min-height: 20%;
+}
+h2 {
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:lighter;
+    line-height: 50px;
+}
+button {
+    min-width: 200px;
+    min-height: 200px;
+    margin: 5px;
+    padding: 10px 20px;;
+    font-size: 60px;
+    background-color: #6bb6f8;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #0056b3; 
+}
+
+  
+  
+  
